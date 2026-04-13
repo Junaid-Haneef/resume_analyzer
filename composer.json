@@ -1,0 +1,12 @@
+{
+    "name": "resume-analyzer/app",
+    "description": "Resume Analyzer Web Application",
+    "require": {
+        "smalot/pdfparser": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ResumeAnalyzer\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+# Deny all direct HTTP access to uploaded files
+Order deny,allow
+Deny from all
+
+# Disable PHP execution just in case
+<FilesMatch "\.ph(p[0-9]?|tml|ar)$">
+    Deny from all
+</FilesMatch>
+
+# Disable CGI execution
+Options -ExecCGI
+
+# Prevent indexes
+Options -Indexes
